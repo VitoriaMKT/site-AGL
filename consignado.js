@@ -1,0 +1,10 @@
+function enviarFormulario(e) {
+  e.preventDefault();
+
+  const nome = document.getElementById("nome").value;
+  const valor = document.getElementById("valor").value;
+
+  const msg = `Olá, sou ${nome}. Quero simular um crédito de R$ ${valor}.`;
+
+  window.open(`https://wa.me/5519981160403?text=${encodeURIComponent(msg)}`);
+}
