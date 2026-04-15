@@ -40,7 +40,7 @@ body {
 }
 
 .logo img {
-  height: 150px;
+  height: 180px;
   width: auto;
   object-fit: contain;
   transition: 0.3s;
@@ -52,7 +52,7 @@ body {
 
 .menu {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .menu a {
@@ -79,16 +79,16 @@ body {
 
 /* HERO */
 .container {
-  max-width: 1200px; /* aumenta largura */
+  max-width: 1300px; /* aumenta largura */
   margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: center; /* 🔥 CENTRALIZA */
 
-  gap: 80px; /* mais espaçamento bonito */
+  gap: 60px; /* mais espaçamento bonito */
 
-  padding: 140px 40px 60px;
+  padding: 50px 40px 60px;
 }
 
 .hero-text {
@@ -137,7 +137,7 @@ body {
 }
 
 .phone {
-  width: 280px;
+  height: 500px;
   height: 520px;
   border: 4px solid #ff6a00;
   border-radius: 40px;
@@ -731,7 +731,7 @@ body::after {
 
 /* TÍTULO */
 .titulo {
-  font-size: 48px;
+  font-size: 44px;
   color: #fff;
   margin-bottom: 60px;
 }
@@ -2509,8 +2509,8 @@ html {
   margin: 50px auto 0 auto; /* 🔥 centraliza */
   display: block;
 }
-.form-section {
-  min-height: 100vh;
+.container {
+  padding: 50px 60px;
 
   display: flex;
   align-items: center;
@@ -2522,7 +2522,7 @@ html {
 .form-container {
 
 .form-container 
-  text-align: center; /* 🔥 centraliza título */
+  text-align center; /* 🔥 centraliza título */
 
   display: flex;
   flex-direction: column;
@@ -2539,7 +2539,6 @@ html {
 }
 
 .form-section {
-  min-height: 100vh;
 
   display: flex;
   align-items: center;
@@ -2594,11 +2593,7 @@ html {
 }
 
 .footer-pro {
-  margin-top: 120px;
-  padding: 80px 20px 40px;
-
-  background: linear-gradient(180deg, #0d0d1f, #050510);
-  border-top: 1px solid rgba(255,255,255,0.08);
+  background: transparent;
 }
 
 /* CONTAINER */
@@ -2873,8 +2868,7 @@ html {
 }
 
 .sobre-agille {
-  padding: 120px 20px;
-  background: linear-gradient(90deg, #070714, #2e2ea8);
+  background: transparent;
 }
 
 /* CONTAINER */
@@ -3163,9 +3157,27 @@ body {
 }
 
 .footer-pro {
-  background: linear-gradient(180deg, #05060f, #0a0a20);
-  padding: 100px 80px 40px;
-  position: relative;
+  padding: 40px 60px; /* antes estava muito alto */
+  background: linear-gradient(180deg, #05060f, #0b0d1f);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px; /* diminui espaço entre colunas */
+  align-items: flex-start;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
 }
 
 /* CONTAINER */
@@ -3282,16 +3294,9 @@ body {
   color: #ff7a00;
 }
 
-.sobre-agille {
-  background: linear-gradient(
-    120deg,
-    #05060f 0%,
-    #0f1235 30%,
-    #1f2370 60%,
-    #2e2eb8 100%
-  );
-  
-  padding: 120px 20px;
+.resultado-box {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
 }
 
 .sobre-texto h2 {
@@ -3500,4 +3505,119 @@ h1, h2, h3 {
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+
+/* ========================= */
+/* POLÍTICAS (ESTILO BANCO) */
+/* ========================= */
+
+.politicas {
+  padding: 120px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.politicas-container {
+  max-width: 1100px;
+  width: 100%;
+
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+
+  border-radius: 24px;
+  padding: 60px;
+
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+}
+
+/* TÍTULO */
+.politicas-container h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  background: linear-gradient(90deg, #fff, #d1d1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LISTA */
+.politicas-lista {
+  list-style: none;
+  padding: 0;
+}
+
+/* ITEM */
+.politicas-lista li {
+  position: relative;
+
+  padding: 14px 0 14px 25px;
+  color: #ccc;
+  font-size: 18px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+
+  transition: 0.3s;
+}
+
+/* BOLINHA */
+.politicas-lista li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff6a00;
+  font-size: 22px;
+}
+
+/* HOVER */
+.politicas-lista li:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .politicas-container {
+    padding: 30px 20px;
+  }
+
+  .politicas-container h2 {
+    font-size: 28px;
+  }
+
+  .politicas-lista li {
+    font-size: 15px;
+  }
+}
+
+.menu a:hover {
+  color: #ff6a00;
+}
+.container {
+  justify-content: center;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.phone {
+  height: 480px;
+  max-height: 500px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#simulador {
+  scroll-margin-top: 100px;
 }
