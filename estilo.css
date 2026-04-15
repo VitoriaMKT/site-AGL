@@ -684,7 +684,7 @@ h1, h2 {
 body::after {
   content: "";
   display: block;
-  height: 80px; /* espaço extra no final */
+  
 }
 
 .diferencial-img {
@@ -2520,9 +2520,7 @@ html {
 }
 
 .form-container {
-
-.form-container 
-  text-align center; /* 🔥 centraliza título */
+  text-align: center; /* 🔥 centraliza título */
 
   display: flex;
   flex-direction: column;
@@ -2592,10 +2590,6 @@ html {
   width: 100%;
 }
 
-.footer-pro {
-  background: transparent;
-}
-
 /* CONTAINER */
 .footer-container {
   max-width: 1200px;
@@ -2608,12 +2602,14 @@ html {
 
 /* COLUNAS */
 .footer-col h3 {
+  margin-top: 20px;
   color: #fff;
   font-size: 22px;
   margin-bottom: 15px;
 }
 
 .footer-col h4 {
+  margin-top: 20px;
   color: #ff7a00;
   margin-bottom: 15px;
 }
@@ -2701,14 +2697,12 @@ html {
 }
 
 .footer-pro {
-  margin-top: 220px; /* aumenta distância do conteúdo */
-  padding: 100px 20px 60px; /* mais espaço interno */
+  
+  padding: 10px 10px 10px; /* mais espaço interno */
+  background: linear-gradient(180deg, #0a0a1a 0%, #050510 100%);
 }
 
-.footer-pro {
-  background: linear-gradient(180deg, #0a0a1a 0%, #050510 100%);
-  position: relative;
-}
+
 
 .footer-pro::before {
   content: "";
@@ -3156,10 +3150,6 @@ body {
   position: relative;
 }
 
-.footer-pro {
-  padding: 40px 60px; /* antes estava muito alto */
-  background: linear-gradient(180deg, #05060f, #0b0d1f);
-}
 
 .footer-container {
   max-width: 1200px;
